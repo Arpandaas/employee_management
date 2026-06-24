@@ -1,0 +1,49 @@
+2026-06-01 21:20:04,230 - app.core.loger - INFO - Updating user with ID: 1
+2026-06-01 21:20:04,236 - app.core.loger - ERROR - Error occurred while updating user: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'ADasq' for key 'users.ix_users_username'")
+[SQL: UPDATE users SET username=%(username)s, email=%(email)s, hashed_password=%(hashed_password)s, updated_at=%(updated_at)s WHERE users.id = %(users_id)s]
+[parameters: {'username': 'ADasq', 'email': 'arpandaas@pentationanalytics.com', 'hashed_password': '$2b$12$TuqASY.C/uNkcTo0bAvKZOZGr/1R74ObvgC3iYd1yhuW0CoVcnoEC', 'updated_at': datetime.datetime(2026, 6, 1, 21, 20, 4, 230130), 'users_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-06-01 21:21:53,662 - app.core.loger - INFO - Updating user with ID: 1
+2026-06-01 21:21:53,669 - app.core.loger - ERROR - Error occurred while updating user: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'ADasq' for key 'users.ix_users_username'")
+[SQL: UPDATE users SET username=%(username)s, email=%(email)s, hashed_password=%(hashed_password)s, updated_at=%(updated_at)s WHERE users.id = %(users_id)s]
+[parameters: {'username': 'ADasq', 'email': 'arpandaas@pentationanalytics.com', 'hashed_password': '$2b$12$41J4d1YNQA/pm7KUjkBsA.J2Kr5mfYilinCLPyUmk9hhp8FfWfH1C', 'updated_at': datetime.datetime(2026, 6, 1, 21, 21, 53, 662038), 'users_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-06-01 21:22:22,242 - app.core.loger - INFO - Updating user with ID: 1
+2026-06-01 21:22:22,249 - app.core.loger - ERROR - Error occurred while updating user: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'ADasq' for key 'users.ix_users_username'")
+[SQL: UPDATE users SET username=%(username)s, email=%(email)s, hashed_password=%(hashed_password)s, updated_at=%(updated_at)s WHERE users.id = %(users_id)s]
+[parameters: {'username': 'ADasq', 'email': 'arpandaas@pentationanalytics.com', 'hashed_password': '$2b$12$JrjFHih7bCpqfM24IOnaUO/U0IuFWSvPE93Vks9PI6wovpSn8DAM.', 'updated_at': datetime.datetime(2026, 6, 1, 21, 22, 22, 242568), 'users_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-06-01 21:26:53,843 - app.core.loger - INFO - Updating user with ID: 1
+2026-06-01 21:26:53,847 - app.core.loger - WARNING - Duplicate username attempt on update: ADasq
+2026-06-01 21:27:05,201 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-01 21:29:01,110 - app.core.loger - INFO - Updating user with ID: 2
+2026-06-01 21:29:01,122 - app.core.loger - INFO - User updated successfully: 2
+2026-06-01 21:29:11,064 - app.core.loger - INFO - Retrieving user with ID: 2
+2026-06-01 21:30:48,231 - app.core.loger - INFO - Creating user with email: arpandaas99@pentationanalytics.com and username: ADasq3
+2026-06-01 21:36:20,024 - app.core.loger - INFO - Deleting user with ID: 2
+2026-06-01 21:36:20,025 - app.core.loger - ERROR - Error occurred while deleting user: Class 'builtins.int' is not mapped
+2026-06-01 21:37:22,668 - app.core.loger - INFO - Deleting user with ID: 2
+2026-06-15 21:53:44,275 - app.core.loger - ERROR - Error occurred while retrieving user: 404: User not found
+2026-06-15 21:53:56,911 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-15 22:00:01,738 - app.core.loger - INFO - Updating user with ID: 1
+2026-06-15 22:00:01,749 - app.core.loger - INFO - User updated successfully: 1
+2026-06-15 22:41:31,578 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-15 23:08:09,615 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-17 10:43:49,040 - app.core.loger - ERROR - Error occurred while retrieving user: 404: User not found
+2026-06-17 10:44:09,675 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-17 10:45:18,873 - app.core.loger - INFO - Creating user with email: arpandaas99@gmail.com and username: arpan
+2026-06-17 10:49:57,817 - app.core.loger - INFO - Retrieved all users successfully. Total users: 3
+2026-06-17 11:08:20,064 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-17 12:13:19,672 - app.core.loger - INFO - Retrieved all users successfully. Total users: 3
+2026-06-17 12:13:37,157 - app.core.loger - ERROR - Error occurred while retrieving user: 404: User not found
+2026-06-17 12:13:45,014 - app.core.loger - INFO - Retrieving user with ID: 3
+2026-06-17 16:28:46,988 - app.core.loger - INFO - Retrieving user with ID: 3
+2026-06-18 18:31:53,416 - app.core.loger - ERROR - Error occurred while creating Department: {e}
+2026-06-18 21:58:04,537 - app.core.loger - INFO - updated succesfully department id is:1
+2026-06-23 17:14:26,343 - app.core.loger - INFO - updated succesfully department id is:1
+2026-06-23 17:20:07,833 - app.core.loger - INFO - updated succesfully department id is:4
+2026-06-23 17:20:56,839 - app.core.loger - INFO - updated succesfully department id is:4
+2026-06-23 19:11:58,174 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-23 19:13:01,246 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-23 19:13:21,251 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-23 19:14:46,938 - app.core.loger - INFO - Retrieving user with ID: 1
