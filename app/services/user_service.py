@@ -124,7 +124,7 @@ def login_user_service(db:Session, login_data: LoginSchema):
     if not user:
         raise HTTPException(
             status_code=401,
-            detail="Invalid email or password"
+            detail="Invalid Credentials"
         )
     if not verify_password(login_data.password, user.hashed_password):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid Credentials")

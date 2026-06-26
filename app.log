@@ -47,3 +47,30 @@
 2026-06-23 19:13:01,246 - app.core.loger - INFO - Retrieving user with ID: 1
 2026-06-23 19:13:21,251 - app.core.loger - INFO - Retrieving user with ID: 1
 2026-06-23 19:14:46,938 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-24 16:48:57,678 - app.core.loger - INFO - Creating user with email: superadmin@company.com and username: superadmin
+2026-06-24 16:51:08,910 - app.core.loger - INFO - Creating user with email: it.manager@company.com and username: it_manager
+2026-06-24 16:51:46,390 - app.core.loger - INFO - Creating user with email: arpan@company.com and username: arpan1
+2026-06-24 16:52:06,413 - app.core.loger - INFO - Creating user with email: rahul@company.com and username: rahul
+2026-06-24 16:52:19,020 - app.core.loger - INFO - Creating user with email: priya@company.com and username: priya
+2026-06-24 16:53:39,346 - app.core.loger - INFO - Creating user with email: systemadmin@company.com and username: systemadmin
+2026-06-24 16:54:48,494 - app.core.loger - INFO - Creating user with email: finance.manager@company.com and username: finance_manager
+2026-06-24 16:55:15,236 - app.core.loger - INFO - Creating user with email: sourav@company.com and username: sourav
+2026-06-24 16:55:30,113 - app.core.loger - INFO - Creating user with email: amit@company.com and username: amit
+2026-06-24 16:56:04,880 - app.core.loger - INFO - Creating user with email: riya@company.com and username: riya
+2026-06-24 16:56:20,929 - app.core.loger - INFO - Creating user with email: vikas@company.com and username: vikas
+2026-06-24 16:56:30,301 - app.core.loger - INFO - Creating user with email: ankit@company.com and username: ankit
+2026-06-24 16:56:46,019 - app.core.loger - INFO - Creating user with email: deepak@company.com and username: deepak
+2026-06-24 16:58:47,340 - app.core.loger - INFO - Creating user with email: sales.manager@company.com and username: sales_manager
+2026-06-24 16:59:00,502 - app.core.loger - INFO - Creating user with email: sandeep@company.com and username: sandeep
+2026-06-24 16:59:08,607 - app.core.loger - INFO - Creating user with email: neha@company.com and username: neha
+2026-06-24 16:59:20,330 - app.core.loger - INFO - Creating user with email: pooja@company.com and username: pooja
+2026-06-24 16:59:31,453 - app.core.loger - INFO - Creating user with email: manish@company.com and username: manish
+2026-06-25 10:37:02,364 - app.core.loger - INFO - {'user_id': 1, 'username': 'ArpanDas', 'email': 'arpand@pentationanalytics.com', 'role': 'employee', 'exp': 1782364281}
+2026-06-25 10:38:48,728 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782364407}
+2026-06-25 10:38:48,732 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-25 10:42:07,512 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782364407}
+2026-06-25 10:42:07,515 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-25 10:42:12,367 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782364407}
+2026-06-25 11:08:53,918 - app.core.loger - INFO - {'user_id': 10, 'username': 'systemadmin', 'email': 'systemadmin@company.com', 'role': 'admin', 'exp': 1782366173}
+2026-06-25 11:09:15,819 - app.core.loger - INFO - {'user_id': 10, 'username': 'systemadmin', 'email': 'systemadmin@company.com', 'role': 'admin', 'exp': 1782366173}
+2026-06-25 11:09:15,822 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21

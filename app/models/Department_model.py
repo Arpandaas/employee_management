@@ -11,8 +11,8 @@ class Department(Base):
     department_code = Column(String(20),index = True)
     details = Column(Text,nullable=True)
     users = relationship("User", back_populates="department")  # Relationship to User model
-    created_at = Column(DateTime,nullable=False,default= datetime.now())
-    updated_at = Column(DateTime,nullable = True,onupdate=datetime.now())
+    created_at = Column(DateTime,nullable=False,default= datetime.utcnow)
+    updated_at = Column(DateTime,nullable = True,onupdate=datetime.utcnow)
 
     def __repr__(self):
         return f"<Department(id={self.id}, department_name='{self.department_name}', department_code='{self.department_code}', details='{self.details}', created_at='{self.created_at}', updated_at='{self.updated_at}')>"

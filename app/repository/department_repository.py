@@ -2,6 +2,7 @@
 
 from app.core.loger import logger
 from app.models.Department_model import Department
+from sqlalchemy.orm import relationship,selectinload
 
 
 def get_dept(db,department_code):
@@ -49,3 +50,7 @@ def delete_department_repository(db,db_dept_data):
     except Exception as e:
         logger.error(f"An error occurred during deleting department. Error is {e}")
         raise Exception("An error occurred during deleting department. Error is {e}")
+    
+
+def get_all_departments_repository(db):
+    return db.query(Department).options(selectinload(Department.users)).all()

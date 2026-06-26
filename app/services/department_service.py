@@ -1,7 +1,7 @@
 from fastapi import HTTPException,status
 from sqlalchemy.orm import Session
 
-from app.repository.department_repository import get_dept,create_department_repository,get_dept_by_id,update_department_repository,delete_department_repository
+from app.repository.department_repository import get_dept,create_department_repository,get_dept_by_id,update_department_repository,delete_department_repository,get_all_departments_repository
 
 def create_department_service(db,Dept_data):
     existing_dept = get_dept(db,Dept_data.department_code)
@@ -72,9 +72,12 @@ def delete_department_service(db,dept_id):
     
     try:
         delete_department_repository(db,db_dept_data)
-        return {"message":"Department deleted successfully"}
+        return db_dept_data
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="An error occurred during deleting department. Error is {e}"
         )
+
+def get_all_departments_service(db):
+    return get_all_departments_repository(db)

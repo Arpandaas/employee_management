@@ -4,6 +4,7 @@ from app.dependencies.auth_dependency import get_current_user
 from app.config.database import get_db
 from app.schemas.user_schema import UserUpdateSchema,UserResponseSchema
 from app.services.user_service import get_user_service,update_user_service,delete_user_service,get_all_users_service
+from app.dependencies.permission_dependency import require_admin
 
 router = APIRouter(
     prefix="/users",
@@ -52,6 +53,7 @@ def get_me(
 
 @router.get("/getAllUsers", response_model=list[UserResponseSchema])
 def get_all_users(
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user=Depends(require_admin)
 ):
     return get_all_users_service(db)

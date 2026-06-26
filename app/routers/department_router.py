@@ -2,7 +2,7 @@ from fastapi import APIRouter,Depends
 from sqlalchemy.orm import Session
 from app.config.database import get_db
 from app.schemas.department_schema import DepartmentBaseSchema,DepartmentSchema,UpdateDepartmentSchema
-from app.services.department_service import create_department_service,get_department_service,update_department_service,delete_department_service
+from app.services.department_service import create_department_service,get_department_service,update_department_service,delete_department_service,get_all_departments_service
 
 
 
@@ -27,7 +27,7 @@ def create_department(
 
 @dep.get("/getDepartment/{department_id}",response_model=DepartmentSchema)
 def getDepartment(
-    department_id = int,
+    department_id : int,
     db: Session = Depends(get_db)
 ):
     return get_department_service(db,department_id)
@@ -43,9 +43,15 @@ def update_department(
     
 
 
-dep.delete("/deleteDept/{department_id}")
+@dep.delete("/deleteDept/{department_id}",response_model=DepartmentSchema)
 def delete_department(
     department_id : int,
     db:Session = Depends(get_db)
 ):
     return delete_department_service(db,department_id)
+
+@dep.get("/getAllDepartments",response_model=list[DepartmentSchema])
+def get_all_departments(
+    db:Session = Depends(get_db)
+):
+    return get_all_departments_service(db)

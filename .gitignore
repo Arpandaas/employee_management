@@ -36,7 +36,8 @@ MANIFEST
 *.swp
 *.swo
 *~
-
+*.pyc
+*.pycfile
 # Testing
 .pytest_cache/
 .coverage

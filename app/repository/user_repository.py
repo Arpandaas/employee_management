@@ -32,6 +32,7 @@ def get_user_by_id_repository(db, user_id: int):
     db_user =db.query(User).filter(User.id == user_id).first()
     if db_user is None:
         logger.warning(f"User with ID {user_id} not found")
+        return None
     db_user.department_name = db_user.department.department_name if db_user.department else None
     return db_user
 
