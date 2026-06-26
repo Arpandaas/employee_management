@@ -1,6 +1,7 @@
 from app.models.user_model import User
 from sqlalchemy import or_
 from app.core.loger import logger
+from sqlalchemy.orm import joinedload
 
 
 
@@ -66,7 +67,7 @@ def delete_user_repository(db, db_user):
 
 def get_all_users_repository(db):
     try:
-        users = db.query(User).all()
+        users = db.query(User).options(joinedload(User.department)).all()
         logger.info(f"Retrieved all users successfully. Total users: {len(users)}")
         return users
     except Exception as e:

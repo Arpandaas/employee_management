@@ -134,4 +134,14 @@ def login_user_service(db:Session, login_data: LoginSchema):
     return TokenResponseSchema(access_token=access_token, token_type="bearer", message="Login successful")
 
 def get_all_users_service(db: Session):
-    return get_all_users_repository(db)
+    users = get_all_users_repository(db)
+    print(users)
+
+    # for user in users:
+    #     if user.department_id is not None:
+    #         # department_name = get_dept_by_id(db,user.department_id)
+    #         # user.department_name = department_name.department_name
+    #         user.department_name = user.department.department_name
+    
+    return users
+        

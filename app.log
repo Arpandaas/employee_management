@@ -74,3 +74,19 @@
 2026-06-25 11:08:53,918 - app.core.loger - INFO - {'user_id': 10, 'username': 'systemadmin', 'email': 'systemadmin@company.com', 'role': 'admin', 'exp': 1782366173}
 2026-06-25 11:09:15,819 - app.core.loger - INFO - {'user_id': 10, 'username': 'systemadmin', 'email': 'systemadmin@company.com', 'role': 'admin', 'exp': 1782366173}
 2026-06-25 11:09:15,822 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 11:35:50,301 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782454224}
+2026-06-26 11:35:50,325 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 11:38:12,017 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782454224}
+2026-06-26 11:38:12,042 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 11:39:32,020 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782454224}
+2026-06-26 11:39:32,056 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 11:44:53,038 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782454754}
+2026-06-26 11:44:53,050 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 12:09:19,210 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782457737}
+2026-06-26 12:09:19,222 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 12:14:51,197 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782457737}
+2026-06-26 12:14:51,226 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 12:24:48,525 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782457737}
+2026-06-26 12:24:48,544 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 12:25:40,306 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782457737}
+2026-06-26 12:25:40,324 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
