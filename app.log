@@ -90,3 +90,237 @@
 2026-06-26 12:24:48,544 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
 2026-06-26 12:25:40,306 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782457737}
 2026-06-26 12:25:40,324 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 16:59:06,723 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782475126}
+2026-06-26 16:59:06,729 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 17:05:06,203 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-26 17:05:06,203 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:05:06,204 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-26 17:05:06,204 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:05:06,205 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-26 17:05:06,205 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:05:06,205 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:05:06,205 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-26 17:05:06,205 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:05:06,207 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-26 17:05:06,207 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:05:06,208 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-26 17:05:10,265 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782475126}
+2026-06-26 17:05:10,269 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:05:10,272 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 17:05:10,272 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] {'id_1': 5, 'param_1': 1}
+2026-06-26 17:05:10,274 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:05:10,274 - sqlalchemy.engine.Engine - INFO - [generated in 0.00016s] {'pk_1': 1}
+2026-06-26 17:05:10,276 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+2026-06-26 17:05:10,276 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] {}
+2026-06-26 17:05:10,277 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 17:05:10,278 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:05:10,278 - sqlalchemy.engine.Engine - INFO - [cached since 0.00396s ago] {'pk_1': 2}
+2026-06-26 17:05:10,279 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:05:10,279 - sqlalchemy.engine.Engine - INFO - [cached since 0.005137s ago] {'pk_1': 3}
+2026-06-26 17:05:10,280 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:05:10,281 - sqlalchemy.engine.Engine - INFO - [cached since 0.006427s ago] {'pk_1': 5}
+2026-06-26 17:05:10,286 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 17:06:01,634 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-26 17:06:01,634 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:06:01,635 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-26 17:06:01,635 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:06:01,635 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-26 17:06:01,635 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:06:01,636 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:06:01,636 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-26 17:06:01,636 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:06:01,638 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-26 17:06:01,638 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:06:01,639 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-26 17:06:08,420 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782475126}
+2026-06-26 17:06:08,425 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:06:08,427 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 17:06:08,427 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'id_1': 5, 'param_1': 1}
+2026-06-26 17:06:08,429 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:06:08,430 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] {'pk_1': 1}
+2026-06-26 17:06:08,431 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+2026-06-26 17:06:08,432 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] {}
+2026-06-26 17:06:08,432 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 17:06:08,433 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:06:08,433 - sqlalchemy.engine.Engine - INFO - [cached since 0.003563s ago] {'pk_1': 2}
+2026-06-26 17:06:08,434 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:06:08,434 - sqlalchemy.engine.Engine - INFO - [cached since 0.004291s ago] {'pk_1': 3}
+2026-06-26 17:06:08,434 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:06:08,434 - sqlalchemy.engine.Engine - INFO - [cached since 0.005013s ago] {'pk_1': 5}
+2026-06-26 17:06:08,441 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 17:07:14,784 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782475126}
+2026-06-26 17:07:14,785 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:07:14,785 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 17:07:14,785 - sqlalchemy.engine.Engine - INFO - [cached since 66.36s ago] {'id_1': 5, 'param_1': 1}
+2026-06-26 17:07:14,786 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:07:14,786 - sqlalchemy.engine.Engine - INFO - [cached since 66.36s ago] {'pk_1': 1}
+2026-06-26 17:07:14,788 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+2026-06-26 17:07:14,788 - sqlalchemy.engine.Engine - INFO - [cached since 66.36s ago] {}
+2026-06-26 17:07:14,789 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 17:07:14,790 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:07:14,790 - sqlalchemy.engine.Engine - INFO - [cached since 66.36s ago] {'pk_1': 2}
+2026-06-26 17:07:14,791 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:07:14,791 - sqlalchemy.engine.Engine - INFO - [cached since 66.36s ago] {'pk_1': 3}
+2026-06-26 17:07:14,792 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:07:14,792 - sqlalchemy.engine.Engine - INFO - [cached since 66.36s ago] {'pk_1': 5}
+2026-06-26 17:07:14,796 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 17:07:50,879 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-26 17:07:50,879 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:07:50,880 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-26 17:07:50,880 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:07:50,880 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-26 17:07:50,880 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:07:50,881 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:07:50,881 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-26 17:07:50,881 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:07:50,883 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-26 17:07:50,883 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 17:07:50,884 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-26 17:07:58,007 - app.core.loger - INFO - {'user_id': 5, 'username': 'superadmin', 'email': 'superadmin@company.com', 'role': 'admin', 'exp': 1782475126}
+2026-06-26 17:07:58,011 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 17:07:58,014 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 17:07:58,014 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] {'id_1': 5, 'param_1': 1}
+2026-06-26 17:07:58,016 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 17:07:58,016 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'pk_1': 1}
+2026-06-26 17:07:58,021 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at, `Department_1`.id AS `Department_1_id`, `Department_1`.department_name AS `Department_1_department_name`, `Department_1`.department_code AS `Department_1_department_code`, `Department_1`.details AS `Department_1_details`, `Department_1`.created_at AS `Department_1_created_at`, `Department_1`.updated_at AS `Department_1_updated_at` 
+FROM users LEFT OUTER JOIN `Department` AS `Department_1` ON `Department_1`.id = users.department_id
+2026-06-26 17:07:58,021 - sqlalchemy.engine.Engine - INFO - [generated in 0.00034s] {}
+2026-06-26 17:07:58,023 - app.core.loger - INFO - Retrieved all users successfully. Total users: 21
+2026-06-26 17:07:58,028 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 18:05:10,869 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-26 18:05:10,869 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:05:10,870 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-26 18:05:10,870 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:05:10,870 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-26 18:05:10,871 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:05:10,871 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:05:10,871 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-26 18:05:10,871 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:05:10,873 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-26 18:05:10,873 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:05:10,874 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-26 18:09:11,275 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-26 18:09:11,275 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:09:11,276 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-26 18:09:11,276 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:09:11,276 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-26 18:09:11,276 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:09:11,277 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:09:11,278 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-26 18:09:11,278 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:09:11,279 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-26 18:09:11,279 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-26 18:09:11,281 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-26 18:09:19,831 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:09:19,833 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:09:19,833 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] {'email_1': 'superadmin@company.com', 'param_1': 1}
+2026-06-26 18:09:20,055 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 18:10:08,429 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:10:08,430 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:08,430 - sqlalchemy.engine.Engine - INFO - [cached since 48.6s ago] {'email_1': 'arpand@pentationanalytics.com', 'param_1': 1}
+2026-06-26 18:10:08,653 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 18:10:37,908 - app.core.loger - INFO - {'user_id': 1, 'username': 'ArpanDas', 'email': 'arpand@pentationanalytics.com', 'role': 'employee', 'exp': 1782479408}
+2026-06-26 18:10:37,908 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:10:37,909 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:37,909 - sqlalchemy.engine.Engine - INFO - [generated in 0.00029s] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:37,913 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 18:10:37,913 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] {'pk_1': 1}
+2026-06-26 18:10:37,915 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:37,915 - sqlalchemy.engine.Engine - INFO - [cached since 0.006191s ago] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:37,917 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:37,917 - sqlalchemy.engine.Engine - INFO - [generated in 0.00033s] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:37,918 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-26 18:10:37,920 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 18:10:44,788 - app.core.loger - INFO - {'user_id': 1, 'username': 'ArpanDas', 'email': 'arpand@pentationanalytics.com', 'role': 'employee', 'exp': 1782479408}
+2026-06-26 18:10:44,788 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:10:44,789 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:44,789 - sqlalchemy.engine.Engine - INFO - [cached since 6.88s ago] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:44,790 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 18:10:44,790 - sqlalchemy.engine.Engine - INFO - [cached since 6.877s ago] {'pk_1': 1}
+2026-06-26 18:10:44,792 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-26 18:10:58,167 - app.core.loger - INFO - {'user_id': 1, 'username': 'ArpanDas', 'email': 'arpand@pentationanalytics.com', 'role': 'employee', 'exp': 1782479408}
+2026-06-26 18:10:58,167 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-26 18:10:58,168 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:58,168 - sqlalchemy.engine.Engine - INFO - [cached since 20.26s ago] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:58,170 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(pk_1)s
+2026-06-26 18:10:58,170 - sqlalchemy.engine.Engine - INFO - [cached since 20.26s ago] {'pk_1': 1}
+2026-06-26 18:10:58,172 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.full_name AS users_full_name, users.hashed_password AS users_hashed_password, users.`role` AS users_role, users.department_id AS users_department_id, users.phone_number AS users_phone_number, users.address AS users_address, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:58,172 - sqlalchemy.engine.Engine - INFO - [cached since 20.26s ago] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:58,173 - sqlalchemy.engine.Engine - INFO - SELECT `Department`.id AS `Department_id`, `Department`.department_name AS `Department_department_name`, `Department`.department_code AS `Department_department_code`, `Department`.details AS `Department_details`, `Department`.created_at AS `Department_created_at`, `Department`.updated_at AS `Department_updated_at` 
+FROM `Department` 
+WHERE `Department`.id = %(id_1)s 
+ LIMIT %(param_1)s
+2026-06-26 18:10:58,173 - sqlalchemy.engine.Engine - INFO - [cached since 20.26s ago] {'id_1': 1, 'param_1': 1}
+2026-06-26 18:10:58,174 - app.core.loger - INFO - Retrieving user with ID: 1
+2026-06-26 18:10:58,175 - sqlalchemy.engine.Engine - INFO - ROLLBACK

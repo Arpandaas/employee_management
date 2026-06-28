@@ -68,6 +68,7 @@ def delete_user_repository(db, db_user):
 def get_all_users_repository(db):
     try:
         users = db.query(User).options(joinedload(User.department)).all()
+        # users = db.query(User).all()
         logger.info(f"Retrieved all users successfully. Total users: {len(users)}")
         return users
     except Exception as e:
