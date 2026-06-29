@@ -62,3 +62,4 @@ Thumbs.db
 # Project files
 *.zip
 /app_*.zip
+*.log
