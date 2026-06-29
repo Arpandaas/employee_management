@@ -324,3 +324,51 @@ WHERE `Department`.id = %(id_1)s
 2026-06-26 18:10:58,173 - sqlalchemy.engine.Engine - INFO - [cached since 20.26s ago] {'id_1': 1, 'param_1': 1}
 2026-06-26 18:10:58,174 - app.core.loger - INFO - Retrieving user with ID: 1
 2026-06-26 18:10:58,175 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2026-06-29 11:28:26,861 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-29 11:28:26,861 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:26,862 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-29 11:28:26,862 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:26,862 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-29 11:28:26,863 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:26,863 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-29 11:28:26,863 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-29 11:28:26,863 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:26,867 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-29 11:28:26,868 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:26,872 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-29 11:28:27,647 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-29 11:28:27,647 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:27,648 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-29 11:28:27,648 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:27,648 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-29 11:28:27,648 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:27,649 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-29 11:28:27,649 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-29 11:28:27,649 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:27,651 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-29 11:28:27,651 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 11:28:27,652 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-29 12:46:37,841 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-29 12:46:37,841 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:37,841 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-29 12:46:37,841 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:37,842 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-29 12:46:37,842 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:37,842 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-29 12:46:37,842 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-29 12:46:37,842 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:37,843 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-29 12:46:37,844 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:37,845 - sqlalchemy.engine.Engine - INFO - COMMIT
+2026-06-29 12:46:38,482 - sqlalchemy.engine.Engine - INFO - SELECT DATABASE()
+2026-06-29 12:46:38,482 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:38,483 - sqlalchemy.engine.Engine - INFO - SELECT @@sql_mode
+2026-06-29 12:46:38,483 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:38,483 - sqlalchemy.engine.Engine - INFO - SELECT @@lower_case_table_names
+2026-06-29 12:46:38,483 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:38,484 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2026-06-29 12:46:38,484 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`users`
+2026-06-29 12:46:38,484 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:38,485 - sqlalchemy.engine.Engine - INFO - DESCRIBE `employee_management`.`Department`
+2026-06-29 12:46:38,485 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2026-06-29 12:46:38,486 - sqlalchemy.engine.Engine - INFO - COMMIT

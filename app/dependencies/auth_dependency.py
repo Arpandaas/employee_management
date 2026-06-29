@@ -5,7 +5,7 @@ from app.repository.user_repository import get_user_by_id_repository
 from sqlalchemy.orm import Session
 
 from app.utils.jwt_utils import verify_access_token 
-from app.core.loger import logger
+from app.core.logger import logger
 
 security = HTTPBearer()
 

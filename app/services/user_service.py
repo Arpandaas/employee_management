@@ -7,7 +7,7 @@ from app.utils.hash_utils import hash_password, verify_password
 from fastapi import HTTPException, status
 from datetime import datetime
 from sqlalchemy.orm import Session
-from app.core.loger import logger
+from app.core.logger import logger
 from app.utils.jwt_utils import create_access_token
 from app.repository.department_repository import get_dept_by_id
 

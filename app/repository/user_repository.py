@@ -1,6 +1,6 @@
 from app.models.user_model import User
 from sqlalchemy import or_
-from app.core.loger import logger
+from app.core.logger import logger
 from sqlalchemy.orm import joinedload
 
 

@@ -4,7 +4,7 @@ from app.routers.home_router import home_router
 from app.routers.user_router import router 
 from app.config.database import engine, Base
 from app.models.user_model import User
-from app.models.Department_model import Department
+from app.models.department_model import Department
 from app.exceptions.handlers import user_not_found_handler
 from app.exceptions.custom_exception import UserNotFoundException
 from app.routers.department_router import dep

@@ -1,7 +1,7 @@
 
 
-from app.core.loger import logger
-from app.models.Department_model import Department
+from app.core.logger import logger
+from app.models.department_model import Department
 from sqlalchemy.orm import relationship,selectinload
 
 
