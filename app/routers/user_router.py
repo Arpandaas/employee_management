@@ -21,7 +21,7 @@ router = APIRouter(
 def read_user(
     user_id: int,
     db: Session = Depends(get_db),
-    current_user = Depends(require_admin_or_self)
+    current_user = Depends(require_admin_manager_or_self)
 ):
     
     return get_user_service(db, user_id)
@@ -32,16 +32,15 @@ def update_user(
     user_id: int,
     user_data: UserUpdateSchema,
     db: Session = Depends(get_db),
-    current_user = Depends(require_admin_or_self)
+    current_user = Depends(require_admin_manager_or_self)
 ):
     return update_user_service(db, user_id, user_data)
 
 
-@router.delete("/deleteUser/{user_id}")
+@router.delete("/deleteUser/{user_id}",dependencies=[Depends(require_admin)])
 def delete_user(
     user_id: int,
-    db: Session = Depends(get_db),
-    current_user = Depends(require_admin)
+    db: Session = Depends(get_db)
 ):
 
     return delete_user_service(db, user_id)
@@ -57,6 +56,6 @@ def get_me(
 @router.get("/getAllUsers", response_model=list[UserResponseSchema])
 def get_all_users(
     db: Session = Depends(get_db),
-    current_user=Depends(require_admin_manager_or_self)
+    current_user=Depends(require_admin)
 ):
     return get_all_users_service(db)

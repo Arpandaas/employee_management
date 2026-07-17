@@ -56,3 +56,15 @@ def require_admin_manager_or_self(
             status_code = status.HTTP_403_FORBIDDEN,
             detail= "You are not authorized to access this resource. "
         )
+
+
+def require_admin_manager(
+    current_user: User = Depends(get_current_user)
+):
+    if current_user.role.lower() == "manager":
+        return current_user
+    
+    raise HTTPException (
+            status_code = status.HTTP_403_FORBIDDEN,
+            detail= "You are not authorized to access this resource. "
+        )
