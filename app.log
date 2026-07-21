@@ -518,3 +518,4 @@ WHERE `Department`.id = %(id_1)s
 2026-06-29 17:22:55,385 - sqlalchemy.engine.Engine - INFO - COMMIT
 2026-07-01 13:13:00,855 - app.core.logger - INFO - {'user_id': 6, 'username': 'it_manager', 'email': 'it.manager@company.com', 'role': 'manager', 'exp': 1782893560}
 2026-07-01 13:26:06,980 - app.core.logger - INFO - {'user_id': 6, 'username': 'it_manager', 'email': 'it.manager@company.com', 'role': 'manager', 'exp': 1782893560}
+2026-07-18 23:59:45,991 - app.core.logger - INFO - {'user_id': 1, 'username': 'ArpanDas', 'email': 'arpand@pentationanalytics.com', 'role': 'employee', 'exp': 1784401159}

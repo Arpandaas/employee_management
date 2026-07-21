@@ -19,7 +19,5 @@ def getTeam(
     db: Session = Depends(get_db),
     current_user=Depends(require_admin_manager)
 ):
-    if current_user:
-        dept_id = current_user.department_id
-        if current_user.role.lower() == "manager":
-            return get_team_service(db,dept_id)
+    dept_id = current_user.department_id
+    return get_team_service(db,dept_id)
